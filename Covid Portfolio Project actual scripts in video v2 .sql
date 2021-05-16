@@ -106,7 +106,7 @@ Select *, (RollingPeopleVaccinated/Population)*100
 from #PercentPopulationVaccinated;
 
 
---Creating viwe to store data for later visualizations 
+--Creating view to store data for later visualizations 
 GO
 Create View PercentagePopulationVaccinated as
 Select dea.continent, dea.location, dea.date, dea.population, vac.new_vaccinations
